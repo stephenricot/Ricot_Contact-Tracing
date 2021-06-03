@@ -35,6 +35,7 @@ namespace Ricot_Contact_Tracing
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.contact_input = new System.Windows.Forms.TextBox();
             this.address_input = new System.Windows.Forms.TextBox();
             this.age_input = new System.Windows.Forms.TextBox();
@@ -51,6 +52,8 @@ namespace Ricot_Contact_Tracing
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.BackgroundImage = global::Ricot_Contact_Tracing.Properties.Resources._187161;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(8, 9);
             this.panel1.Name = "panel1";
@@ -60,6 +63,7 @@ namespace Ricot_Contact_Tracing
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 52.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(46, 4);
             this.label1.Name = "label1";
@@ -74,12 +78,15 @@ namespace Ricot_Contact_Tracing
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(8, 131);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(329, 378);
+            this.panel2.Size = new System.Drawing.Size(342, 378);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel3.BackgroundImage = global::Ricot_Contact_Tracing.Properties.Resources._187161;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.contact_input);
             this.panel3.Controls.Add(this.address_input);
             this.panel3.Controls.Add(this.age_input);
@@ -94,10 +101,21 @@ namespace Ricot_Contact_Tracing
             this.panel3.Size = new System.Drawing.Size(603, 378);
             this.panel3.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(291, 38);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Enter information:";
+            // 
             // contact_input
             // 
             this.contact_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact_input.Location = new System.Drawing.Point(227, 180);
+            this.contact_input.Location = new System.Drawing.Point(219, 234);
             this.contact_input.Name = "contact_input";
             this.contact_input.Size = new System.Drawing.Size(333, 45);
             this.contact_input.TabIndex = 13;
@@ -106,7 +124,7 @@ namespace Ricot_Contact_Tracing
             // address_input
             // 
             this.address_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address_input.Location = new System.Drawing.Point(213, 128);
+            this.address_input.Location = new System.Drawing.Point(205, 182);
             this.address_input.Name = "address_input";
             this.address_input.Size = new System.Drawing.Size(347, 45);
             this.address_input.TabIndex = 12;
@@ -115,7 +133,7 @@ namespace Ricot_Contact_Tracing
             // age_input
             // 
             this.age_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age_input.Location = new System.Drawing.Point(138, 74);
+            this.age_input.Location = new System.Drawing.Point(130, 128);
             this.age_input.Name = "age_input";
             this.age_input.Size = new System.Drawing.Size(91, 45);
             this.age_input.TabIndex = 11;
@@ -124,7 +142,7 @@ namespace Ricot_Contact_Tracing
             // name_input
             // 
             this.name_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_input.Location = new System.Drawing.Point(169, 20);
+            this.name_input.Location = new System.Drawing.Point(161, 74);
             this.name_input.Name = "name_input";
             this.name_input.Size = new System.Drawing.Size(343, 45);
             this.name_input.TabIndex = 10;
@@ -135,7 +153,7 @@ namespace Ricot_Contact_Tracing
             this.contact.AutoSize = true;
             this.contact.BackColor = System.Drawing.Color.WhiteSmoke;
             this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.Location = new System.Drawing.Point(23, 183);
+            this.contact.Location = new System.Drawing.Point(15, 237);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(175, 38);
             this.contact.TabIndex = 4;
@@ -146,7 +164,7 @@ namespace Ricot_Contact_Tracing
             this.address.AutoSize = true;
             this.address.BackColor = System.Drawing.Color.WhiteSmoke;
             this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address.Location = new System.Drawing.Point(23, 131);
+            this.address.Location = new System.Drawing.Point(15, 185);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(155, 38);
             this.address.TabIndex = 3;
@@ -157,7 +175,7 @@ namespace Ricot_Contact_Tracing
             this.age.AutoSize = true;
             this.age.BackColor = System.Drawing.Color.WhiteSmoke;
             this.age.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age.Location = new System.Drawing.Point(23, 77);
+            this.age.Location = new System.Drawing.Point(15, 131);
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(88, 38);
             this.age.TabIndex = 2;
@@ -168,7 +186,7 @@ namespace Ricot_Contact_Tracing
             this.name.AutoSize = true;
             this.name.BackColor = System.Drawing.Color.WhiteSmoke;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(23, 23);
+            this.name.Location = new System.Drawing.Point(15, 77);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(118, 38);
             this.name.TabIndex = 1;
@@ -177,10 +195,10 @@ namespace Ricot_Contact_Tracing
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(200, 310);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(419, 308);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 54);
+            this.button1.Size = new System.Drawing.Size(170, 54);
             this.button1.TabIndex = 0;
             this.button1.TabStop = false;
             this.button1.Text = "ENTER";
@@ -246,6 +264,7 @@ namespace Ricot_Contact_Tracing
         private System.Windows.Forms.TextBox address_input;
         private System.Windows.Forms.TextBox age_input;
         private System.Windows.Forms.TextBox name_input;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -13,8 +13,6 @@ namespace Ricot_Contact_Tracing
 {
     public partial class Form1 : Form
     {
-        private object txt;
-
         public Form1()
         {
             InitializeComponent();
@@ -33,12 +31,14 @@ namespace Ricot_Contact_Tracing
         private void enter_click(object sender, EventArgs e)
         {
             StreamWriter OutputFile;
-            OutputFile = File.CreateText("Output.txt");
+            OutputFile = File.AppendText("Output.txt");
 
-            OutputFile.Write(value: name_input.Text);
-            OutputFile.Write(value: age_input.Text);
-            OutputFile.Write(value: address_input.Text);
-            OutputFile.Write(value: contact_input.Text);
+            OutputFile.WriteLine("Your Information:");
+            OutputFile.WriteLine("================================");
+            OutputFile.WriteLine("Name: " + name_input.Text);
+            OutputFile.WriteLine("Age: " + age_input.Text);
+            OutputFile.WriteLine("Address: " + address_input.Text);
+            OutputFile.WriteLine("Contact/s: " + contact_input.Text);
             OutputFile.Close();
         }
     }
