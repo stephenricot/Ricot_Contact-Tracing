@@ -36,10 +36,13 @@ namespace Ricot_Contact_Tracing
             OutputFile.WriteLine("Your Information:");
             OutputFile.WriteLine("================================");
             OutputFile.WriteLine("Name: " + name_input.Text);
+            OutputFile.WriteLine("Gender: " + gender_input.Text);
             OutputFile.WriteLine("Age: " + age_input.Text);
             OutputFile.WriteLine("Address: " + address_input.Text);
             OutputFile.WriteLine("Contact/s: " + contact_input.Text);
             OutputFile.Close();
+
+            MessageBox.Show("Information Coded Successfully!");
         }
     }
 }
