@@ -23,11 +23,6 @@ namespace Ricot_Contact_Tracing
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void enter_click(object sender, EventArgs e)
         {
             StreamWriter OutputFile;
@@ -40,8 +35,19 @@ namespace Ricot_Contact_Tracing
             OutputFile.WriteLine("Age: " + age_input.Text);
             OutputFile.WriteLine("Address: " + address_input.Text);
             OutputFile.WriteLine("Contact/s: " + contact_input.Text);
-            OutputFile.Close();
+            OutputFile.WriteLine("Have you been in contact with other person? " + InContact_input.Text);
+            OutputFile.WriteLine("================================");
+            OutputFile.WriteLine("Symptoms: ");
 
+            foreach (Control symptom in panel3.Controls)
+            {
+                if ((symptom is CheckBox) && ((CheckBox)symptom).Checked)
+                {
+                    OutputFile.WriteLine(symptom.Text);
+                }
+            }
+
+            OutputFile.Close();
             MessageBox.Show("Information Coded Successfully!");
         }
     }
