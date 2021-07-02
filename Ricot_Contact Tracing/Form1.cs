@@ -50,5 +50,24 @@ namespace Ricot_Contact_Tracing
             OutputFile.Close();
             MessageBox.Show("Information Coded Successfully!");
         }
+
+        private void new_click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = @"D:\JOSHUA\Documents\College Portfolio\2nd Sem\OOP\Ricot_Contact Tracing\Ricot_Contact Tracing\bin\Debug";
+                openFileDialog.DefaultExt = "txt";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ;
+                }
+            }
+        }
+
+        private void reset_click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
