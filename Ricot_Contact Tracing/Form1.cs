@@ -67,7 +67,18 @@ namespace Ricot_Contact_Tracing
 
         private void reset_click(object sender, EventArgs e)
         {
-
+            name_input.Clear();
+            gender_input.Clear();
+            age_input.Clear();
+            address_input.Clear();
+            contact_input.Clear();
+            InContact_input.Clear();
+            Fever.Checked = false;
+            Coughs.Checked = false;
+            Sore_Throat.Checked = false;
+            Runny_Nose.Checked = false;
+            Diarrhea.Checked = false;
+            Headache.Checked = false;
         }
     }
 }
